@@ -738,7 +738,7 @@ figure {
   }
 }
 #fh5co-portfolio-list li.one-half {
-  width: 49%;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   #fh5co-portfolio-list li.one-half {
