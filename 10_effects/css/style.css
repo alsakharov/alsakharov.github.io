@@ -1,0 +1,221 @@
+/*Basic settings*/
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0 auto;
+  color: #7d76ff;
+  height: 100vh;
+  background: #333333 url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+/* fonts mixin*/
+@font-face {
+  font-family: 'Rockwell Nova';
+  src: url('../fonts/RockwellNova.eot');
+  src: url('../fonts/RockwellNova.eot?#iefix') format('embedded-opentype'), url('../fonts/RockwellNova.woff2') format('woff2'), url('../fonts/RockwellNova.woff') format('woff'), url('../fonts/RockwellNova.ttf') format('truetype'), url('../fonts/RockwellNova.svg#RockwellNova') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rockwell Nova';
+  src: url('../fonts/RockwellNova-Bold.eot');
+  src: url('../fonts/RockwellNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/RockwellNova-Bold.woff2') format('woff2'), url('../fonts/RockwellNova-Bold.woff') format('woff'), url('../fonts/RockwellNova-Bold.ttf') format('truetype'), url('../fonts/RockwellNova-Bold.svg#RockwellNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rockwell Nova';
+  src: url('../fonts/RockwellNova-Italic.eot');
+  src: url('../fonts/RockwellNova-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/RockwellNova-Italic.woff2') format('woff2'), url('../fonts/RockwellNova-Italic.woff') format('woff'), url('../fonts/RockwellNova-Italic.ttf') format('truetype'), url('../fonts/RockwellNova-Italic.svg#RockwellNova-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+/*color mexin*/
+/*block styles*/
+header {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 28rem;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 20rem 20rem 0 0;
+}
+header h1 {
+  padding-top: 6rem;
+}
+header p {
+  font-size: 24px;
+  color: #202242;
+}
+button {
+  width: 10rem;
+  height: 8rem;
+  border-radius: 10rem;
+  background-color: rgba(96, 38, 35, 0.6);
+  border: 2px solid;
+}
+span {
+  margin-top: 3rem;
+  display: inline-block;
+  height: 6rem;
+  width: 10rem;
+  font-weight: 400;
+}
+.block {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.block-one {
+  border-radius: 50px;
+  overflow: hidden;
+  background: url(../img/one.jpg);
+}
+.block-one:hover .block-one-wrap {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.block-one-wrap {
+  border-radius: 50px;
+  margin-left: -1.5rem;
+  width: 18.3rem;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: #ffffff;
+  font-family: 'RockwellNova' sans-serif;
+  font-weight: bold;
+  -webkit-transform: translateX(-100%) rotate(90deg);
+          transform: translateX(-100%) rotate(90deg);
+}
+.block-two {
+  border-radius: 50px;
+  overflow: hidden;
+  background: url(../img/two.jpg);
+}
+.block-two:hover .block-two-wrap {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.block-two-wrap {
+  border-radius: 50px;
+  margin-left: -1.5rem;
+  width: 18.3rem;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: #ffffff;
+  font-family: 'RockwellNova' sans-serif;
+  font-weight: bold;
+  -webkit-transform: translateY(-100%) rotate(90deg);
+          transform: translateY(-100%) rotate(90deg);
+}
+.block-free {
+  border-radius: 50px;
+  overflow: hidden;
+  background: url(../img/free.jpg);
+}
+.block-free:hover .block-free-wrap {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.block-free-wrap {
+  border-radius: 50px;
+  margin-left: -1.5rem;
+  width: 18.3rem;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: #ffffff;
+  font-family: 'RockwellNova' sans-serif;
+  font-weight: bold;
+  -webkit-transform: translateY(100%) rotate(90deg);
+          transform: translateY(100%) rotate(90deg);
+}
+.block-four {
+  border-radius: 50px;
+  overflow: hidden;
+  background: url(../img/four.jpg);
+}
+.block-four:hover .block-four-wrap {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.block-four-wrap {
+  border-radius: 50px;
+  margin-left: -1.5rem;
+  width: 18.3rem;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: #ffffff;
+  font-family: 'RockwellNova' sans-serif;
+  font-weight: bold;
+  -webkit-transform: translateY(-100%) rotate(-90deg);
+          transform: translateY(-100%) rotate(-90deg);
+}
+.block-five {
+  border-radius: 50px;
+  overflow: hidden;
+  background: url(../img/five.jpg);
+}
+.block-five:hover .block-five-wrap {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.block-five-wrap {
+  border-radius: 50px;
+  margin-left: -1.5rem;
+  width: 18.3rem;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: #ffffff;
+  font-family: 'RockwellNova' sans-serif;
+  font-weight: bold;
+  -webkit-transform: translateY(100%) rotate(-90deg);
+          transform: translateY(100%) rotate(-90deg);
+}
+.block-six {
+  border-radius: 50px;
+  overflow: hidden;
+  background: url(../img/six.jpg);
+}
+.block-six:hover .block-six-wrap {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.block-six-wrap {
+  border-radius: 50px;
+  margin-left: -1.5rem;
+  width: 18.3rem;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: #ffffff;
+  font-family: 'RockwellNova' sans-serif;
+  font-weight: bold;
+  -webkit-transform: translateX(100%) rotate(90deg);
+          transform: translateX(100%) rotate(90deg);
+}
+.col-md-2 {
+  margin: 1rem  0 1rem 1rem;
+  height: 18rem;
+  width: 18.3rem;
+  text-align: center;
+  display: inline-block;
+}
+/* gradient */
+/* opacity */
+/* box shadow */
+/* text shadow */
+/* box sizing */
+/* border radius */
+/* column */
