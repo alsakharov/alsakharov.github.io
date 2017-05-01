@@ -1,0 +1,37 @@
+body {
+  margin: 0 auto;
+}
+.popup {
+  width: 300px;
+  height: 400px;
+  background-color: #fff ;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: none;
+}
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.popup-overlay:target {
+  display: block;
+}
+.popup-overlay:target + .popup {
+  display: block;
+}
+.popup-close {
+  position: absolute;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+}
