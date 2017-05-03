@@ -43,6 +43,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-transition: all 1s;
+          transition: all 1s;
 }
 .item:hover {
   -webkit-flex-basis: 100%;
