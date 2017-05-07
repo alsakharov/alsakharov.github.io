@@ -140,6 +140,7 @@ body {
 }
 .box-icons ul {
   display: inline-block;
+  padding: 0px;
 }
 .box-icons ul li {
   height: 2rem;
@@ -161,6 +162,15 @@ body {
   }
   .main-money {
     display: none;
+  }
+  .main ul {
+    padding-top: 8rem;
+  }
+  .main form {
+    background-color: #777;
+    color: #fff;
+    left: 10%;
+    position: relative;
   }
 }
 @media (min-width: 640px) and (max-width: 1170px) {
