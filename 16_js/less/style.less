@@ -1,0 +1,135 @@
+
+section{
+	padding: 20px 100px;
+	
+}
+.container{
+	background-color:white;
+	color:black;
+	transition:all 1s;
+	&_active
+{
+	background-color:black;
+	color:white;
+}
+}
+.bad{
+	&-link{
+		position:absolute;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: #000;
+		border-radius: 10%;
+		box-shadow: 1px 1px 10px rgba(0,0,0, .4);
+		bottom:20px;
+		left: 20px;
+		span{
+			display:block;
+			height:18px;
+			width:18px;
+			position:absolute;
+			left:50%;
+			margin-left: -9px;
+			top:50%;
+			margin-top:-8px;
+			opacity:.70;
+			background-color: red;
+			border-radius: 50%;
+		}
+		&_active{
+		background-color:rgba(255,255,255, .4); }
+	}
+
+}
+
+
+.menu {
+	&-link {
+		z-index:9;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(17,227,7, .4);
+		border-radius: 50%;
+		box-shadow: 1px 1px 10px rgba(0,0,0, .4);
+		position: fixed;
+		top:20px;
+		right: 20px;
+		span, span:before, span:after {
+			display:block;
+			height:2px;
+			width:18px;
+			position:absolute;
+			left:50%;
+			margin-left: -9px;
+			top:50%;
+			margin-top:-1px;
+			background-color: #555;
+		}
+		span:before{
+			transition:all 0.2s;
+			content: '';
+			margin-top: -6px;
+		}
+		span:after{
+			transition:all 0.2s;
+			content: '';
+			margin-top: 4px;
+		}
+		&_active{
+			transition:all 1s;
+			background-color: rgba(222,17,227, .6);
+
+		
+		 span{
+		background-color: transparent;
+		&:before{
+			transform: rotate(135deg);
+			margin-top:0px;
+		}
+		&:after{
+			transform: rotate(-135deg);
+			margin-top:0px;
+		}
+	}
+	}
+	}
+background-color: orange;
+opacity: .95;
+position: fixed;
+width: 100vw;
+height: 100vh;
+z-index: 1;
+display:flex;
+justify-content:center;
+align-items:center;
+bottom: -100vh;
+transition:all 0.5s;
+&_active
+{
+	bottom:0;
+}
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: center;
+
+	a{	
+		line-height: 4;
+		font-weight: 100;
+		letter-spacing: 4px;
+		color: #fff;
+		text-decoration: none;
+		transition:all 0.5s;
+		width:100vw;
+		display:block;
+		&:hover {
+			
+			
+			background-color: rgba(255,255,255, .4);
+		}
+	}
+}
+}
