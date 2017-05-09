@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+section {
+  background: url(../img/bg.jpg) center center no-repeat;
+  box-sizing: cover;
+  height: 100vh;
+  width: 100 vw;
+}
+section.thanks {
+  background: url(../img/bg2.jpg) center center no-repeat;
+}
+.logo {
+  margin-top: 15rem;
+  text-align: center;
+}
+.logo h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#form {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 15rem;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+#form button {
+  display: block;
+  font-size: 1.7rem;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 3%;
+  -webkit-transition: all, 2s;
+  transition: all, 2s;
+}
+#form button:hover {
+  letter-spacing: 0.15rem;
+  font-size: 1.8rem;
+}
+#form label.error {
+  border: none;
+  color: orange;
+}
+#form input {
+  height: 5rem;
+  font-size: 1.4rem;
+  border: none;
+  letter-spacing: 0.15rem;
+  color: #50a7a7;
+}
+#form input.error {
+  border: 1px solid red;
+  -webkit-transition: all, 1s;
+  transition: all, 1s;
+}
+#form input#input-name {
+  background: rgba(59, 38, 24, 0.67) url(../img/us.png) no-repeat center right;
+}
+#form input#input-email {
+  background: rgba(59, 38, 24, 0.67) url(../img/em.png) no-repeat center right;
+}
+#form input#input-password {
+  background: rgba(59, 38, 24, 0.67) url(../img/ps.png) no-repeat center right;
+}
+#form ::-webkit-input-placeholder {
+  color: #fff;
+}
+#form ::-moz-placeholder {
+  color: #fff;
+}
+#form :-moz-placeholder {
+  color: #fff;
+}
+#form :-ms-input-placeholder {
+  color: #fff;
+}
+.form-control {
+  margin-bottom: 1rem;
+}
