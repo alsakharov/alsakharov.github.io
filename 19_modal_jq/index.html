@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+	    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/normalize.css.css" rel="stylesheet">
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+  </head>
+  <body>
+  <a class="reg" href="#our-modal">Register</a>
+  <a href="#close" class="our-modal-overlay"></a>
+	<div class="our-modal">
+	   <a href="#close" class="our-modal-close">&times;</a>
+		<form action="">
+		<input type="text" placeholder="логин">
+		<input type="password" placeholder="пароль">
+
+		<button>yes</button>
+		</form>
+	</div>
+
+	<section class="cd-section">
+		
+
+		<div class="cd-modal-action">
+			<a href="#0" class="btn" data-type="modal-trigger">Fire</a>
+			<span class="cd-modal-bg"></span>
+		</div> <!-- cd-modal-action -->
+
+		<div class="cd-modal">
+			<div class="cd-modal-content">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+				</p>
+			</div> <!-- cd-modal-content -->
+		</div> <!-- cd-modal -->
+
+		<a href="#0" class="cd-modal-close">Close</a>
+	</section> <!-- .cd-section -->
+
+    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	   <!--  <script src="js/bootstrap.min.js"></script> -->
+	 <script>
+	 	var link = $('.reg');
+	 	var our = $('.our-modal');
+	 	var close = $('.our-modal-close');
+	 	var overlay = $('.our-modal-overlay');
+	 	link.click(function(){
+	 		our.show(300);
+	 		overlay.show(0);
+	 	});
+	 	close.click(function(){
+	 		our.hide(300);
+	 		overlay.hide(0);
+	 	});
+	 	overlay.click(function(){
+	 		our.hide(300);
+	 		overlay.hide(0);
+	 	});
+	 </script>
+  </body>
+</html>
