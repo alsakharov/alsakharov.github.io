@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+h6 {
+  font-size: 13px;
+  font-weight: bold;
+}
+span {
+  color: #1abc9c;
+}
+.header {
+  height: 77rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.header-box {
+  height: 80%;
+}
+.header h4 {
+  height: 8rem;
+}
+.header i {
+  display: block;
+  font-size: 10rem;
+  height: 20rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.header i:hover {
+  color: #1abc9c;
+}
+.header button {
+  background: #1abc9c;
+  border: 0px;
+  height: 4rem;
+  width: 12rem;
+  margin-left: -4px;
+}
+.header input {
+  width: 16rem;
+  height: 4rem;
+  border: 0;
+  text-indent: 2rem;
+}
+.header input.position {
+  margin-left: -4px;
+  border-left: rgba(0, 0, 0, 0.1) 1px solid;
+}
+.header p {
+  display: block;
+  padding-top: 29rem;
+  position: relative;
+}
+.menu {
+  z-index: 2;
+  background-color: #fff;
+  padding: 0 10rem 0 10rem;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  height: 44px;
+  line-height: 44px;
+}
+.menu ul {
+  display: inline-block;
+  margin: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu_left {
+  float: left;
+}
+.menu_left li {
+  margin-left: 2rem;
+}
+.menu_right {
+  font-size: 2rem;
+  padding: 0px 16px 0px 16px;
+  border-left: rgba(0, 0, 0, 0.1) 1px solid;
+  border-right: rgba(0, 0, 0, 0.1) 1px solid;
+  float: right;
+}
+.footer {
+  z-index: 2;
+  background-color: #fff;
+  padding: 8rem;
+  text-align: center;
+  display: block;
+}
+.footer i {
+  font-size: 64px;
+}
+.fa-circle-thin {
+  vertical-align: middle;
+  font-size: 9px;
+}
+.fa-twitter {
+  margin-right: 1rem;
+  color: #00aced;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-smile-o {
+  font-size: 7rem;
+}
+.fa-window-restore {
+  color: #4796b7;
+}
+.fa-twitch {
+  color: #9f5cd8;
+}
+.fa-question {
+  color: #f1438a;
+}
