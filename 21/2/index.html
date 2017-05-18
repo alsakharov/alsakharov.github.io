@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="parallax-window" data-parallax="scroll" data-bleed="100" data-speed="-1" data-image-src="img/z.jpg">
+	
+</div>
+<div class="parallax-window2" data-parallax="scroll" data-bleed="-010" data-speed="-1" data-image-src="img/e.jpg.jpg">
+	
+</div>
+<div class="parallax-window3" data-parallax="scroll" data-speed="-1" data-image-src="img/s.jpg.jpg">
+	
+</div>
+<div class="parallax-window4" data-parallax="scroll" data-position="0" data-speed="-1" data-image-src="img/t.jpg.jpg">
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+<script src="js/parallax.min.js"></script>
+<script>
+	$(document).ready(function(){
+	$('.parallax-window')
+	.parallax({imageSrc: 'img/z.jpg'
+		});
+	$('.parallax-window2').parallax({imageSrc: 'img/e.jpg'
+		});
+	$('.parallax-window3').parallax({imageSrc: 'img/s.jpg'
+		});
+	$('.parallax-window4').parallax({imageSrc: 'img/t.jpg'
+		});
+	});
+</script>
+
+
+</body>
+</html>

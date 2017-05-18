@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="header-logo">
+<img src="img/logo.png" alt="">
+</div>
+<div class="header-links">
+	<ul>
+		<li>How it works</li>
+		<li>About Us</li>
+		<li>Contact Us</li>
+		<li>Blog</li>
+	</ul>
+</div>
+</header>
+<section>
+
+	<div id="scene"  >
+
+	  <div class="layer" data-depth="0.80"><img src="img/hand.png"></div>
+	  <div class="layer" data-depth="0.20"><img src="img/c1.png"></div>
+	  <div class="layer" data-depth="14"><img src="img/c2.png"></div>
+	  <div class="layer" data-depth="0.60"><img src="img/c3.png"></div>
+	  <div class="layer"  data-depth="0.30"><img src="img/c4.png"></div>
+	  <div class="box">
+    <h1>Track your next fuel shops</h1>
+    <p>Monitor and Alert on all petrol bunks near to you </p>
+    <p>Signup For <span>FREE</span> </p>
+    	<form action="">
+    	<input type="text" placeholder="E-mail adress">
+    	<button type="submit" >SIGN UP</button></form>
+   </div>
+	</div>
+	
+</section>
+<footer>
+	<ul >
+		<li><img src="img/ever.png" alt=""></li>
+		<li><img src="img/fire.png" alt=""></li>
+		<li ><img src="img/goog.png" alt=""></li>
+		<li><img src="img/micr.png" alt=""></li>
+		<li><img src="img/sony.png" alt=""></li>
+	</ul>
+</footer>
+<script src="js/jquery-1.12.4.min.js"></script>	
+<script src="js/jquery.parallax.js"></script>
+<script>
+	$(document).ready(function(){
+	 $('#scene').parallax();
+	});
+</script>
+
+
+</body>
+</html>
