@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+}
+#thanks{
+
+  background:rgba(255,255,255, .8);
+  position: absolute;
+  height:10rem;
+  width:20rem;
+  text-align: center;
+  margin: 35%;
+ }
+section{
+
+  background: url(../img/bg.jpg) center center no-repeat;
+  box-sizing:cover;
+  height: 100vh;
+  width:100 vw;
+  &.thanks{
+    background: url(../img/bg2.jpg) center center no-repeat;
+  }
+}
+
+.logo {
+  margin-top: 15rem;
+  text-align:center;
+  & h1 {
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+#main-form{
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 15rem;
+
+  & button {
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    text-transform: uppercase;
+    padding:3%;
+    transition: all, 2s;
+    &:hover {
+       letter-spacing: 0.15rem;
+       font-size: 1.8rem;
+    }
+
+   
+  }
+   & label.error {
+  border: none;
+  color:orange;
+
+}
+
+
+& textarea {
+  color:#fff;
+  resize: none;
+  &#input-message{
+      background:rgba(59,38,24, .67)  no-repeat center right;
+       height:10rem;
+       text-align: top;
+    }
+  }
+  & input {
+
+    height:5rem;
+    font-size: 1.4rem;
+    border:none;
+    letter-spacing: 0.15rem;
+    color:#50a7a7;
+    &.error{
+       border: 1px solid red;
+       transition: all, 1s;
+    }
+
+    &#input-name{
+      background:rgba(59,38,24, .67) url(../img/us.png) no-repeat center right;
+      
+    }
+    &#input-email{
+      background:rgba(59,38,24, .67) url(../img/em.png) no-repeat center right;
+      
+    }
+    &#input-password{
+      background:rgba(59,38,24, .67) url(../img/ps.png) no-repeat center right;
+      
+    }
+
+
+  }
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+  
+}
+.form-control{
+  margin-bottom: 1rem;
+}
+
