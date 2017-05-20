@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>form</title>
+
+	    <!-- Bootstrap -->
+	<link href="css/style.css" rel="stylesheet">
+     <title>API карт 2ГИС</title>
+        <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+       <script>
+           
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [55.753, 37.617],
+                    zoom: 16
+                });
+
+                DG.marker([55.75255, 37.612638]).addTo(map).bindPopup('И сказала деду Ох!');
+            });
+        </script>
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+  </head>
+  <body>
+  <section>
+  	<p>Баба сеяла горох</p>
+  </section>
+ 
+   <footer>
+   	
+   <div id="map">
+   	<form action="#">
+   		<h1>Contact</h1>
+   		<input class="size" type="text" placeholder="Email">
+   		<input type="text" placeholder="Company">
+   		<input type="text" placeholder="Subject">
+   		<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+   		<button type="submit">send message</button>
+
+
+   	</form>
+   </div>
+   </footer>
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ 
+  </body>
+</html>
